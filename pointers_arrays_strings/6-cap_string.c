@@ -37,6 +37,3 @@ char *cap_string(char *str)
 	}
 	return (str);
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
