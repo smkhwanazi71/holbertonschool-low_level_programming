@@ -21,6 +21,3 @@ void rev_string(char *s)
 		s[len] = aux;
 	}
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
