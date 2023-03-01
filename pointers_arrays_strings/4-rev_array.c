@@ -1,25 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-  * print_rev - Prints a string in reverse
-  * @s: The string to print
-  *
-  * Return: void
-  */
-void print_rev(char *s)
+ * reverse_array - reverse the contents of an array of integers
+ * @a: array of integers
+ * @n: number of elements in array
+ */
+
+void reverse_array(int *a, int n)
 {
-	int c = 0;
+	int i;
+	int h;
 
-	while (s[c] != '\0')
+	for (i = 0; i < (n / 2); i++)
 	{
-		c++;
+		h = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = h;
 	}
-
-	for (c -= 1; c >= 0; c--)
-	{
-		_putchar(s[c]);
-	}
-
-	_putchar('\n');
 }
