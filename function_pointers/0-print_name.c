@@ -6,5 +6,5 @@
   */
 void print_name(char *name, void (*f)(char *))
 {
-	(*f)(name("Hodor", NULL);
+	(*f)(name);
 }
